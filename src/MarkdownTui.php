@@ -5,9 +5,12 @@ namespace Datomatic\NovaMarkdownTui;
 use Datomatic\NovaMarkdownTui\Enums\EditorType;
 use Datomatic\NovaMarkdownTui\Enums\PreviewStyle;
 use Laravel\Nova\Fields\Field;
+use Laravel\Nova\Fields\SupportsDependentFields;
 
 class MarkdownTui extends Field
 {
+    use SupportsDependentFields;
+
     /**
      * The field's component.
      *
